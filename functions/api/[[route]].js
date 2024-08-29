@@ -1,13 +1,20 @@
-import { Router } from 'itty-router';
+import { IttyRouter, error, json, withParams } from 'itty-router'
 
-const router = Router();
+const router = IttyRouter()
 
-router.get('/', () => new Response('Hello, World!'));
+router
+  .all('*', withParams)
+  .get('/json', () => ({ foo: 'bar', array: [1,2,3] }))
+  .get('/params/:id', ({ id }) => id)
+  .all('*', () => error(404))
 
 export default {
-  fetch: router.handle,
-};
-
+  fetch: (request, ...args) => 
+    router
+      .fetch(request, ...args)
+      .then(json)
+      .catch(error)
+}
 
 router.post('/rsvp', async (request, env) => {
   const { name, attendance } = await request.json();
