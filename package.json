@@ -6,11 +6,15 @@
   "scripts": {
     "deploy": "wrangler pages deploy public"
   },
-  "keywords": ["birthday", "rsvp", "cloudflare"],
+  "keywords": [
+    "birthday",
+    "rsvp",
+    "cloudflare"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "itty-router": "^3.0.0"
+    "itty-router": "^3.0.12"
   },
   "devDependencies": {
     "wrangler": "^3.0.0"
