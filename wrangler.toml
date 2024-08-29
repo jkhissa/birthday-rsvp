@@ -1,4 +1,7 @@
 name = "birthdayrsvp"
+type = "javascript"
+account_id = "aaddea0b60a68a03bd3298cfb641a0b3"
+workers_dev = true
 compatibility_date = "2023-01-01"
 
 [site]
@@ -7,9 +10,9 @@ bucket = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "birthdayrsvp"
-database_id = "YOUR_DATABASE_ID_HERE"
+database_id = "0b7c1236-d3e4-4274-b137-ff7b521105e1"
 
 [build]
-command = ""
+command = "npm run build"
 [build.upload]
 format = "service-worker"
