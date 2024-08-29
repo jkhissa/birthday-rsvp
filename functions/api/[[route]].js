@@ -1,10 +1,12 @@
-import { AutoRouter } from 'itty-router'
+import { Router } from 'itty-router';
 
-const router = AutoRouter()
+const router = Router();
 
-router.get('/', () => 'Success!')
+router.get('/', () => new Response('Hello, World!'));
 
-export default { ...router}
+export default {
+  fetch: router.handle,
+};
 
 
 router.post('/rsvp', async (request, env) => {
