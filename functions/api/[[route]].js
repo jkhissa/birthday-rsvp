@@ -1,6 +1,11 @@
-import { Router } from 'itty-router';
+import { AutoRouter } from 'itty-router'
 
-const router = Router();
+const router = AutoRouter()
+
+router.get('/', () => 'Success!')
+
+export default { ...router}
+
 
 router.post('/rsvp', async (request, env) => {
   const { name, attendance } = await request.json();
