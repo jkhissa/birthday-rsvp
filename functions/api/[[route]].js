@@ -29,6 +29,6 @@ router.get('/export', async (request, env) => {
   });
 });
 
-export default {
-  fetch: (request, env) => router.handle(request, env)
-};
+export function onRequest(context) {
+  return router.handle(context.request, context.env);
+}

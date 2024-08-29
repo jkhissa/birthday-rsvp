@@ -7,6 +7,9 @@ bucket = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "birthdayrsvp"
-database_id = "0b7c1236-d3e4-4274-b137-ff7b521105e1"
+database_id = "YOUR_DATABASE_ID_HERE"
 
-# Remove the [env.production] section
+[build]
+command = ""
+[build.upload]
+format = "service-worker"

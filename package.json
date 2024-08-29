@@ -4,7 +4,7 @@
   "description": "Polly's Birthday RSVP application",
   "main": "functions/api/[[route]].js",
   "scripts": {
-    "deploy": "wrangler pages publish public"
+    "deploy": "wrangler pages deploy public"
   },
   "keywords": ["birthday", "rsvp", "cloudflare"],
   "author": "",
@@ -13,6 +13,6 @@
     "itty-router": "^2.6.1"
   },
   "devDependencies": {
-    "wrangler": "^2.0.0"
+    "wrangler": "^3.0.0"
   }
 }
