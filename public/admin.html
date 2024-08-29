@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+        <h1 class="text-3xl font-bold text-center text-pink-500 mb-6">RSVP Admin Panel</h1>
+        <div class="flex justify-between mb-4">
+            <button id="refresh-button" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Refresh RSVPs</button>
+            <button id="export-button" class="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300">Export to CSV</button>
+        </div>
+        <table id="rsvp-table" class="w-full border-collapse">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border p-2 text-left">Name</th>
+                    <th class="border p-2 text-left">Attendance</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="admin-script.js"></script>
+</body>
+</html>

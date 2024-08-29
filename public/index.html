@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Party RSVP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+        <h1 class="text-3xl font-bold text-center text-teal-500 mb-6">Polly's Birthday Party</h1>
+        <p class="text-center text-gray-600 mb-6">Join us for a day of fun and celebration!</p>
+        <button id="rsvp-button" class="w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300">RSVP Now</button>
+        
+        <form id="rsvp-form" class="hidden mt-6 space-y-6">
+            <div>
+                <input type="text" id="name" placeholder="Your Name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+            </div>
+            <div>
+                <h2 class="text-lg font-medium text-gray-700 mb-3">Will you attend?</h2>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="radio" name="attendance" value="yes" required class="form-radio text-teal-500 focus:ring-teal-500 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Yes, I'll be there!</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="attendance" value="no" required class="form-radio text-teal-500 focus:ring-teal-500 h-5 w-5">
+                        <span class="ml-2 text-gray-700">Sorry, I can't make it</span>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300">Submit RSVP</button>
+            </div>
+        </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

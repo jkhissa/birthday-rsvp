@@ -1,0 +1,12 @@
+name = "birthdayrsvp"
+compatibility_date = "2023-01-01"
+
+[site]
+bucket = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "birthdayrsvp"
+database_id = "0b7c1236-d3e4-4274-b137-ff7b521105e1"
+
+# Remove the [env.production] section
